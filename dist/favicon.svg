@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="46" fill="#09152E" stroke="#D4AF37" stroke-width="4"/>
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#4169E1" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="50" y="58" font-size="34" font-family="'Cinzel', serif" font-weight="bold" fill="#F2E5BC" text-anchor="middle">GM</text>
+</svg>

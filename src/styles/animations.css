@@ -1,0 +1,103 @@
+/* Subtle floating motion */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-1.5deg);
+  }
+}
+
+/* Luminous Pulse for Gold and Royal Blue */
+@keyframes pulseGlowGold {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 0 15px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.55), inset 0 0 25px rgba(212, 175, 55, 0.2);
+  }
+}
+
+@keyframes pulseGlowBlue {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(65, 105, 225, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(40, 123, 255, 0.6);
+  }
+}
+
+/* Shimmer metallic shine */
+@keyframes metallicShine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Gradient text utility classes */
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--color-gold-champagne) 0%, var(--color-gold-metallic) 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-blue-gradient {
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-blue-electric) 60%, var(--color-blue-royal) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-royal-gradient {
+  background: linear-gradient(135deg, var(--color-white) 20%, var(--color-blue-royal) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Luxury line accents */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold-metallic), transparent);
+  width: 100%;
+}
+
+.royal-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-blue-royal), transparent);
+  width: 100%;
+}
+
+/* Scroll indicator animation */
+@keyframes scrollIndicatorBob {
+  0% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+}
+
+.scroll-bob {
+  animation: scrollIndicatorBob 2.4s ease-in-out infinite;
+}
+
